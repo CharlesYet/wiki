@@ -15,6 +15,9 @@ jobs:
         node_version: [12.x]
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - name: Install Tencent coscmd
         run: |
           sudo pip install coscmd

@@ -33,5 +33,7 @@ jobs:
 
       - name: Deploy static to Tencent COS
         run: |
-          coscmd upload -rfs --delete -f . /
+          rm -rf .git
+          rm -rf .github
+          coscmd upload -rfs --delete -f . / 
 

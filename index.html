@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Charles Note</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="doc,docs,documentation,gitbook,creator,generator,github,jekyll,github-pages">
+  <meta name="description" content="A magical documentation generator.">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="custom.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="app">We are building somthing special for you ...</div>
+  <script>
+    window.$docsify = {
+      search: 'auto',
+      coverpage: true,
+      onlyCover: true,
+      loadSidebar: true,
+      maxLevel: 3,
+      subMaxLevel: 3,
+      name: 'Charles Note',
+      repo: 'https://github.com/CharlesYet',
+      search: {
+        noData: {
+          '/': 'No results!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': 'Search'
+        }
+      },
+      darklightTheme: {
+        siteFont : "HYZhengYuan",
+        bodyFontSize : '15px',
+        defaultTheme : 'light | dark',
+        codeFontFamily : 'JetBrains Mono',
+        dark: {
+          coverBackground :'#091a28',
+        },
+        light: {
+          coverBackground :'linear-gradient(to left bottom, hsl(94, 100%, 85%) 0%,hsl(238, 100%, 85%) 100%)',
+        }
+      },
+      plugins: [
+        function (hook, vm) {
+          hook.beforeEach(function (html) {
+            url =
+                'https://github.com/CharlesYet/wiki/edit/main/' +
+                vm.route.file;
+            var editHtml = ':memo: <a href="' + url + '" target="_blank" style="text-decoration: none; font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif">Edit on Github\n';
+            return (
+              html  +
+              '\n\n----\n\n' + editHtml +
+              '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none; float:right;">Powered by docsify</a>'
+            );
+          }),
+            hook.afterEach(function (html) {
+              return (
+                html +
+                '<br><div align=center>©2022 By Charles [<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2020085441号</a>]</div>'
+              );
+            });
+        },
+      ],
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script 
+    src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
+    type="text/javascript">
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://charlesnote.com/" target="_blank">
-        <img src="icons/logo.svg" width="300px"/>
+        <img class="logo" src="icons/logo.svg" width="300px"/>
     </a>
 </p>
 

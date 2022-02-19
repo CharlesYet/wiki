@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="keywords" content="doc,docs,documentation,gitbook,creator,generator,github,jekyll,github-pages">
-  <meta name="description" content="A magical documentation generator.">
+  <meta name="keywords" content="前端开发,Java后端开发,嵌入式开发,大数据开发,数据结构,算法题,leetcode,开源,代码,C语言,计算机网络,操作系统,设计模式,编译原理,计算机组成原理,C++,Spring,Spring Boot,Spring Cloud,Redis,MongoDB,Linux,JVM,IDEA,Docker,Git,SVN,Node,Python,MySQL,Tomcat,Nginx,Kubernetes,Elasticsearch,Kafka,程序员,分布式,微服务,大数据,开发者,编程">
+  <meta name="description" content="本站内容主要包含但不限于：Java后端、前端开发、嵌入式开发、大数据开发、数据结构、算法题、leetcode、计算机网络、操作系统、设计模式、编译原理、计算机组成原理、C语言、C++、Spring Boot、Spring Cloud、Git、SVN、Linux、Node、IDEA、Python、MySQL、Redis、Tomcat、Nginx、Kubernetes、Elasticsearch、Kafka、微服务分布式、高可用架构、中间件、数据库、缓存、消息队列、系统监控等知识分享。">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="custom.css"/>
   <link rel="stylesheet" href="style.css"/>
@@ -51,7 +51,7 @@
             url =
                 'https://github.com/CharlesYet/wiki/edit/main/' +
                 vm.route.file;
-            var editHtml = ':memo: <a href="' + url + '" target="_blank" style="text-decoration: none; font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif">Edit on Github\n';
+            var editHtml = '📖 <a href="' + url + '" target="_blank">Edit on Github\n';
             return (
               html  +
               '\n\n----\n\n' + editHtml +
@@ -61,7 +61,7 @@
             hook.afterEach(function (html) {
               return (
                 html +
-                '<br><div align=center>©2022 By Charles [<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2020085441号</a>]</div>'
+                '<br><div align=center>©2022 By Charles 🇨🇳 [<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2020085441号</a>]</div>'
               );
             });
         },

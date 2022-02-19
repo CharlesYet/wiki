@@ -1,9 +1,28 @@
 @font-face{
     font-family: "HYZhengYuan";
-    src : url('fonts/HYZhengYuan-55W.ttf');
+    src: url(fonts/HYZhengYuan-55W.woff2) format('woff2'),
+        url(fonts/HYZhengYuan-55W.woff) format('woff'),
+        url(fonts/HYZhengYuan-55W.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('fonts/JetBrainsMono-Regular.ttf');
+    src: url('fonts/JetBrainsMono-Regular.woff2');
+    font-display: swap;
+}
+
+img {
+    border-radius: 0.5em;
+    box-shadow: rgb(0 0 0 / 55%) 0px 7px 26px;
+}
+
+.logo {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.emoji {
+    border-radius: 0;
+    box-shadow: none;
 }

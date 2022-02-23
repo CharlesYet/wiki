@@ -35,7 +35,7 @@
       },
       darklightTheme: {
         siteFont : "HYZhengYuan",
-        bodyFontSize : '15px',
+        bodyFontSize : '16px',
         defaultTheme : 'light | dark',
         codeFontFamily : 'JetBrains Mono',
         dark: {
@@ -51,7 +51,7 @@
             url =
                 'https://github.com/CharlesYet/wiki/blob/main/' +
                 vm.route.file;
-            var editHtml = '📖 <a href="' + url + '" target="_blank">Edit on Github\n';
+            var editHtml = '<img title="Edit on Github" class="edit-icon" src="icons/github-logo.svg" data-no-zoom/><a href="' + url + '" target="_blank" style="color: #2E8B57;"> Edit this page\n';
             return (
               html  +
               '\n\n----\n\n' + editHtml +

@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/CharlesYet/wiki" target="_blank"><img src="icons/github.svg"></a>
-  <a href="https://space.bilibili.com/98593280" target="_blank"><img src="icons/bilibili.svg"></a>
-  <a href="https://weixin.qq.com" target="_blank"><img src="icons/wechat.svg" alt="微信联系"></a>
+  <a href="https://github.com/CharlesYet/wiki" target="_blank"><img class="icon" src="icons/github.svg"></a>
+  <a href="https://space.bilibili.com/98593280" target="_blank"><img class="icon" src="icons/bilibili.svg"></a>
+  <a href="https://weixin.qq.com" target="_blank"><img class="icon" src="icons/wechat.svg" alt="微信联系"></a>
 </p>
 
 ---

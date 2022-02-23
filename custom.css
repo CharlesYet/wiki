@@ -12,9 +12,10 @@
     font-display: swap;
 }
 
-img {
+.icon {
     border-radius: 0.5em;
     box-shadow: rgb(0 0 0 / 55%) 0px 7px 26px;
+    display: unset;
 }
 
 .logo {
@@ -25,4 +26,11 @@ img {
 .emoji {
     border-radius: 0;
     box-shadow: none;
+}
+
+.edit-icon {
+    box-shadow: none;
+    display: inline-block; 
+    vertical-align: middle;
+    width: 30px;
 }

@@ -13,7 +13,7 @@
 - **Golang**
     - Gorutine
     - Channel
-- **MySQL**
+- [**MySQL**](/mysql/)
 - **Postgres**
 - **Redis**
 - **Elasticsearch**

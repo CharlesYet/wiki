@@ -92,6 +92,24 @@ img {
 	border-radius: 0.5em;
 }
 
+@media screen and (max-width:1680px) and (min-width:1025px) {
+	img {
+		max-width: 60%;
+	}
+}
+
+@media screen and (max-width:1024px) and (min-width:769px) {
+	img {
+		max-width: 80%;
+	}
+}
+
+@media screen and (max-width:768px) {
+	img {
+		max-width: 100%;
+	}
+}
+
 a[disabled] {
 	cursor: not-allowed;
 	opacity: .6

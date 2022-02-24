@@ -6,7 +6,7 @@
 
 大框架：server 层 + 存储引擎层
 
-![](https://cdn.charlesnote.com/wiki/images/2022/02/22/233301381-296421dc08f89cbf71a4826c86cd31ed.png ":no-zoom")
+![](https://cdn.charlesnote.com/wiki/images/2022/02/22/233301381-296421dc08f89cbf71a4826c86cd31ed.png)
 
 Server 层：包括连接器、查询缓存、分析器、优化器、执行器等，涵盖 MySQL 的大多数核心服务功能，以及所有的内置函数（如日期、时间、数学和加密函数等），包括跨引擎功能：触发器，存储过程，视图
 存储引擎层：负责数据存储，提取。MySQL 常用的存储引擎：MyISAM, InnoDB, Memory。目前默认是 `InnoDB`

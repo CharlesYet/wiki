@@ -65,3 +65,31 @@ public void sort(int[] nums) {
 1. 插入排序为原地排序算法，空间复杂度为O(1)
 2. 插入排序是稳定排序算法，对于值相等的元素，可以选择将后面出现的元素插入到后面
 3. 时间复杂度，最好为O(n)，最差为O(n<sup>2</sup>)，平均是 O(n<sup>2</sup>)
+
+#### 选择排序
+
+```java
+public void sort(int[] nums) {
+    int n = nums.length;
+
+    // 判断长度，长度为1 提前退出
+    if (n <= 1) return;
+
+    // 左右两边分为 已排序/未排序
+    // 从右侧的未排序，寻找最小值，放置到左侧末尾
+    // (1,2,3),8,9,4,7 -> (1,2,3,4),9,8,7
+
+    // 定义一个最小值 index, 用于存放每次最小值的下标
+    int minIndex = 0;
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (nums[j] < nums[minIndex]) {
+                minIndex = j;
+            }
+        }
+        int tmp = nums[i];
+        nums[i] = nums[minIndex];
+        nums[minIndex] = tmp;
+    }
+}
+```

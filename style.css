@@ -697,7 +697,7 @@ section.cover ul {
 	padding: 0
 }
 
-section.cover .cover-main>p:last-child a {
+section.cover .cover-main>p:nth-last-child(2) a {
 	border-radius: 2rem;
 	border: 1px solid var(--accent);
 	box-sizing: border-box;
@@ -711,17 +711,17 @@ section.cover .cover-main>p:last-child a {
 	transition: all .15s ease
 }
 
-section.cover .cover-main>p:last-child a:last-child {
+section.cover .cover-main>p:nth-last-child(2) a:last-child {
 	background-color: var(--accent);
 	color: #fff
 }
 
-section.cover .cover-main>p:last-child a:last-child:hover {
+section.cover .cover-main>p:nth-last-child(2) a:last-child:hover {
 	color: inherit;
 	opacity: .8
 }
 
-section.cover .cover-main>p:last-child a:hover {
+section.cover .cover-main>p:nth-last-child(2) a:hover {
 	color: inherit
 }
 
